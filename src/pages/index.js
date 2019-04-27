@@ -1,20 +1,129 @@
 import React from "react"
-import { Link } from "gatsby"
+import Project from "../components/project"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <section id="one" style={{ marginTop: `1.5rem`, marginBottom: `4rem` }}>
+      <h2>Projects</h2>
+      <Project
+        projectTitle="Testing"
+        projectSkills={["gatsby"]}
+        image="https://images.pexels.com/photos/2122170/pexels-photo-2122170.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+      />
+      <Project
+        projectTitle="Testing"
+        projectSkills={["express", "react", "graphql"]}
+        image="https://images.pexels.com/photos/2122170/pexels-photo-2122170.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+      />
+      <Project
+        projectTitle="Testing"
+        projectSkills={["express", "react", "graphql", "mongodb"]}
+        image="https://images.pexels.com/photos/2122170/pexels-photo-2122170.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+      />
+    </section>
+    <hr />
+    <section id="two" style={{ marginTop: `4rem`, marginBottom: `3rem` }}>
+      <h2>Connect With Me!</h2>
+      <p>
+        If you liked to get in touch with me, don't hesitate to leave me a
+        message!
+      </p>
+      <div
+        className="contact"
+        style={{
+          display: `grid`,
+          gridTemplateColumns: `2fr 1fr`,
+          gridGap: `1rem`,
+        }}
+      >
+        <div className="message-form">
+          <form
+            method="post"
+            action="#"
+            style={{
+              display: `grid`,
+              gridTemplateColumns: `1fr 1fr`,
+              gridGap: `0.7rem`,
+            }}
+          >
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+              style={{
+                height: `2.75rem`,
+                background: `#f7f7f7`,
+                borderRadius: `.35em`,
+                border: `2px solid transparent`,
+                color: `inherit`,
+                outline: 0,
+                padding: `0 .75em`,
+                textDecoration: `none`,
+                width: `100%`,
+              }}
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              style={{
+                height: `2.75rem`,
+                background: `#f7f7f7`,
+                borderRadius: `.35rem`,
+                border: `2px solid transparent`,
+                color: `inherit`,
+                outline: 0,
+                padding: `0 .75rem`,
+                textDecoration: `none`,
+                width: `100%`,
+              }}
+            />
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Message"
+              rows="4"
+              style={{
+                gridColumn: `1 / 3`,
+                background: `#f7f7f7`,
+                borderRadius: `.35rem`,
+                border: `2px solid transparent`,
+                color: `inherit`,
+                outline: 0,
+                padding: `0 .75rem`,
+                textDecoration: `none`,
+                width: `100%`,
+              }}
+            />
+          </form>
+          <button
+            type="submit"
+            style={{
+              backgroundColor: `transparent`,
+              height: `2.75rem`,
+              padding: `0 1rem`,
+              borderRadius: `.35rem`,
+              color: `#fff`,
+              background: `#3ecf8e`,
+              fontWeight: 600,
+              textTransform: `uppercase`,
+              lineHeight: `2rem`,
+              letterSpacing: `.04rem`,
+              boxShadow: `0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08)`,
+              cursor: `pointer`,
+            }}
+          >
+            Send Message
+          </button>
+        </div>
+      </div>
+    </section>
   </Layout>
 )
 
