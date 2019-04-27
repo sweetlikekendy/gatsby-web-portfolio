@@ -1,0 +1,24 @@
+.header {
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  justify-content: space-between;
+  left: 0;
+  top: 0;
+  width: 33%;
+  height: 100%;
+  padding: 5rem 5rem 3rem;
+  color: #f2f0ee;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  margin-top: 6rem;
+  margin-bottom: 5rem;
+  display: block;
+  border-radius: 50%;
+}

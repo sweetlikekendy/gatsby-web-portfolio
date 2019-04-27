@@ -1,0 +1,38 @@
+ul > li {
+  display: inline-block;
+  margin-right: 2rem;
+  border: 1px #ff824c solid;
+  color: #ff824c;
+  border-radius: 3px;
+  line-height: 1.6rem;
+  letter-spacing: 0.1rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.skills {
+  list-style: none;
+  margin: 0;
+}
+
+.project {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  margin-top: 2.75rem;
+}
+
+.backgroundImage {
+  height: 100%;
+  width: 500px;
+  border-radius: 1rem 0 0 1rem;
+  background: url("https://images.pexels.com/photos/2122170/pexels-photo-2122170.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size: cover;
+  background-position: center;
+}
+
+.projectDescription {
+  padding: 1.5rem;
+}

@@ -4,25 +4,57 @@ import Project from "../components/project"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+const smallTextAreaStyle = {
+  height: `2.75rem`,
+  background: `#f7f7f7`,
+  borderRadius: `.35em`,
+  border: `2px solid transparent`,
+  color: `inherit`,
+  outline: 0,
+  padding: `0 .75em`,
+  textDecoration: `none`,
+  width: `100%`,
+}
+
+const bigTextAreaStyle = {
+  gridColumn: `1 / 3`,
+  background: `#f7f7f7`,
+  borderRadius: `.35rem`,
+  border: `2px solid transparent`,
+  color: `inherit`,
+  outline: 0,
+  padding: `0 .75rem`,
+  textDecoration: `none`,
+  width: `100%`,
+}
+
+const buttonStyle = {
+  backgroundColor: `transparent`,
+  height: `2.75rem`,
+  padding: `0 1rem`,
+  borderRadius: `.35rem`,
+  color: `#fff`,
+  background: `#3ecf8e`,
+  fontWeight: 600,
+  textTransform: `uppercase`,
+  lineHeight: `2rem`,
+  letterSpacing: `.04rem`,
+  boxShadow: `0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08)`,
+  cursor: `pointer`,
+}
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <section id="one" style={{ marginTop: `1.5rem`, marginBottom: `4rem` }}>
       <h2>Projects</h2>
-      <Project
-        projectTitle="Testing"
-        projectSkills={["gatsby"]}
-        image="https://images.pexels.com/photos/2122170/pexels-photo-2122170.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-      />
+      <Project projectTitle="Testing" projectSkills={["gatsby"]} />
       <Project
         projectTitle="Testing"
         projectSkills={["express", "react", "graphql"]}
-        image="https://images.pexels.com/photos/2122170/pexels-photo-2122170.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
       />
       <Project
         projectTitle="Testing"
         projectSkills={["express", "react", "graphql", "mongodb"]}
-        image="https://images.pexels.com/photos/2122170/pexels-photo-2122170.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
       />
     </section>
     <hr />
@@ -55,70 +87,24 @@ const IndexPage = () => (
               name="name"
               id="name"
               placeholder="Name"
-              style={{
-                height: `2.75rem`,
-                background: `#f7f7f7`,
-                borderRadius: `.35em`,
-                border: `2px solid transparent`,
-                color: `inherit`,
-                outline: 0,
-                padding: `0 .75em`,
-                textDecoration: `none`,
-                width: `100%`,
-              }}
+              style={smallTextAreaStyle}
             />
             <input
               type="email"
               name="email"
               id="email"
               placeholder="Email"
-              style={{
-                height: `2.75rem`,
-                background: `#f7f7f7`,
-                borderRadius: `.35rem`,
-                border: `2px solid transparent`,
-                color: `inherit`,
-                outline: 0,
-                padding: `0 .75rem`,
-                textDecoration: `none`,
-                width: `100%`,
-              }}
+              style={smallTextAreaStyle}
             />
             <textarea
               name="message"
               id="message"
               placeholder="Message"
               rows="4"
-              style={{
-                gridColumn: `1 / 3`,
-                background: `#f7f7f7`,
-                borderRadius: `.35rem`,
-                border: `2px solid transparent`,
-                color: `inherit`,
-                outline: 0,
-                padding: `0 .75rem`,
-                textDecoration: `none`,
-                width: `100%`,
-              }}
+              style={bigTextAreaStyle}
             />
           </form>
-          <button
-            type="submit"
-            style={{
-              backgroundColor: `transparent`,
-              height: `2.75rem`,
-              padding: `0 1rem`,
-              borderRadius: `.35rem`,
-              color: `#fff`,
-              background: `#3ecf8e`,
-              fontWeight: 600,
-              textTransform: `uppercase`,
-              lineHeight: `2rem`,
-              letterSpacing: `.04rem`,
-              boxShadow: `0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08)`,
-              cursor: `pointer`,
-            }}
-          >
+          <button type="submit" style={buttonStyle}>
             Send Message
           </button>
         </div>
