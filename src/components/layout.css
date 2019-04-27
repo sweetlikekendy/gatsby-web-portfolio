@@ -1,14 +1,12 @@
 /* @import url("https://fonts.googleapis.com/css?family=Roboto"); */
 
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 body {
   margin: 0;
-  letter-spacing: 0.05rem;
-  line-height: 1.5rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -203,8 +201,10 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  letter-spacing: 0.05rem;
+  line-height: 1.5rem;
+  color: rgb(89, 100, 130);
+  font-family: "Roboto", georgia, serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -623,4 +623,12 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+/*
+ My additions to styling
+*/
+
+h2 {
+  color: rgb(38, 43, 56);
 }
