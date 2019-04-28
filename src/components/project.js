@@ -7,19 +7,21 @@ const accentColor = `#596482`
 
 const Project = props => (
   <div className={styles.project}>
-    <div className={styles.backgroundImage} />
+    <div
+      className={styles.backgroundImage}
+      style={{
+        background: `url(${props.image})`,
+        backgroundSize: `cover`,
+        backgroundPosition: `center`,
+      }}
+    />
     <div className={styles.projectDescription}>
-      <h3 style={{ color: `${headerColor}` }}>{props.projectTitle}</h3>
-      <p style={{ color: `${accentColor}` }}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-        necessitatibus vitae dolor fugiat. Iste tempora adipisci eligendi in
-        aperiam, reprehenderit tenetur iusto. Placeat quis inventore tempore
-        totam iusto quidem dolorum. Quod sunt molestiae inventore.
-      </p>
+      <h3 style={{ color: `${headerColor}` }}>{props.title}</h3>
+      <p style={{ color: `${accentColor}` }}>{props.description}</p>
       <div style={{ color: `${accentColor}` }}>
         <ul className={styles.skills}>
-          {props.projectSkills.map(projectSkill => (
-            <li className={styles}>{projectSkill}</li>
+          {props.skills.map(skill => (
+            <li className={styles}>{skill}</li>
           ))}
         </ul>
       </div>

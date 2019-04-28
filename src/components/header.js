@@ -31,7 +31,7 @@ const Header = ({ siteTitle }) => (
               textDecoration: `none`,
             }}
           >
-            {siteTitle}
+            Hi, I'm Kendy!
           </Link>
         </h1>
         <img className={styles.avatar} src={Avatar} alt="avatar" />

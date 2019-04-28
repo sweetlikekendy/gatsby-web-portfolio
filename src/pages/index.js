@@ -4,6 +4,8 @@ import Project from "../components/project"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import projects from "../content/projects"
+
 const smallTextAreaStyle = {
   height: `2.75rem`,
   background: `#f7f7f7`,
@@ -47,15 +49,15 @@ const IndexPage = () => (
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <section id="one" style={{ marginTop: `1.5rem`, marginBottom: `4rem` }}>
       <h2>Projects</h2>
-      <Project projectTitle="Testing" projectSkills={["gatsby"]} />
-      <Project
-        projectTitle="Testing"
-        projectSkills={["express", "react", "graphql"]}
-      />
-      <Project
-        projectTitle="Testing"
-        projectSkills={["express", "react", "graphql", "mongodb"]}
-      />
+      {console.log(projects)}
+      {projects.map(project => (
+        <Project
+          title={project.title}
+          image={project.image}
+          description={project.description}
+          skills={project.skills}
+        />
+      ))}
     </section>
     <hr />
     <section id="two" style={{ marginTop: `4rem`, marginBottom: `3rem` }}>
