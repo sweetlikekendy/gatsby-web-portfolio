@@ -25,7 +25,10 @@ const Project = props => (
           ))}
         </ul>
       </div>
-      <ProjectButtons />
+      <ProjectButtons
+        source={props.links.sourceCode}
+        demo={props.links.liveDemo}
+      />
     </div>
   </div>
 )

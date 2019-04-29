@@ -19,6 +19,7 @@ const IndexPage = () => (
           image={project.image}
           description={project.description}
           skills={project.skills}
+          links={project.links}
         />
       ))}
     </section>
