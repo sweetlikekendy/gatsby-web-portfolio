@@ -41,14 +41,7 @@ const Header = ({ siteTitle }) => (
           include HTML, CSS, JS, React, and Gatsby.
         </p>
       </div>
-      <div
-        className="social-links"
-        style={{
-          display: `flex`,
-          justifyContent: `space-around`,
-          marginTop: `5.5rem`,
-        }}
-      >
+      <div className={styles.social_links}>
         <a href="https://github.com/sweetlikekendy">
           <GitHubIcon color={textColor} />
         </a>

@@ -632,3 +632,36 @@ pre tt:after {
 h2 {
   color: rgb(38, 43, 56);
 }
+
+.layout {
+  margin-left: 33%;
+  background-color: #ededed;
+}
+
+.main {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 4rem 0.25rem;
+}
+
+/* 
+ * iPad Pro
+ */
+@media only screen and (max-width: 1024px) {
+  .layout {
+    margin-left: 0;
+  }
+
+  .main {
+    padding: 3rem;
+  }
+}
+
+/* 
+ * iPhone 6/7/8 plus
+ */
+@media only screen and (max-width: 414px) {
+  .main {
+    padding: 2rem;
+  }
+}

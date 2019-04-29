@@ -14,6 +14,12 @@ ul > li {
   margin: 0;
 }
 
+.backgroundImage {
+  height: 100%;
+  width: 500px;
+  border-radius: 1rem 0 0 1rem;
+}
+
 .project {
   background-color: white;
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
@@ -24,12 +30,35 @@ ul > li {
   margin-top: 2.75rem;
 }
 
-.backgroundImage {
-  height: 100%;
-  width: 500px;
-  border-radius: 1rem 0 0 1rem;
-}
-
 .projectDescription {
   padding: 1.5rem;
+}
+
+/* 
+ * iPad Pro
+ */
+@media only screen and (max-width: 1024px) {
+  .backgroundImage {
+    width: 400px;
+  }
+  .project {
+    grid-gap: 0;
+  }
+  .projectDescription {
+    padding-left: 0;
+  }
+}
+
+/* 
+ * iPad
+ */
+@media only screen and (max-width: 768px) {
+  .backgroundImage {
+    display: none;
+  }
+
+  .project {
+    display: block;
+    padding: 0.75rem 2rem;
+  }
 }
