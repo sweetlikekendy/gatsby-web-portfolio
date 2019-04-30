@@ -1,14 +1,10 @@
-import WebPortfolioImage from "../images/web-portfolio-pic.png"
+import WebPortfolioImage from "../images/project_1.png"
 
 export default [
   {
     title: `My Web Portfolio`,
     image: `${WebPortfolioImage}`,
-    description: `Lorem ipsum dolor sit amet consectetur 
-    adipisicing elit. Odit necessitatibus vitae dolor fugiat. 
-    Iste tempora adipisci eligendi in aperiam, reprehenderit tenetur iusto. 
-    Placeat quis inventore tempore totam iusto quidem dolorum. 
-    Quod sunt molestiae inventore.`,
+    description: `The site you're currently visiting! It is a responsive website built with ReactJS. The site content is passed in as JSON data, auto-generating components for easy maintenance.`,
     skills: [`html`, `css`, `javascript`, `react`, `gatsby`],
     links: {
       sourceCode: `https://github.com/sweetlikekendy/gatsby-web-portfolio`,
