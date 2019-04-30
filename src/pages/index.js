@@ -8,9 +8,10 @@ import projects from "../content/projects"
 
 import styles from "./index.module.css"
 
+// title="Home" -> HOME | Kendy Nguyen in production
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO keywords={[`gatsby`, `application`, `react`]} />
     <section className={styles.section_one}>
       <h2>Projects</h2>
       {projects.map(project => (
