@@ -8,7 +8,7 @@ export default [
     skills: [`html`, `css`, `javascript`, `react`, `gatsby`],
     links: {
       sourceCode: `https://github.com/sweetlikekendy/gatsby-web-portfolio`,
-      liveDemo: `www.kendyhnguyen.com`,
+      liveDemo: `http://www.kendyhnguyen.com`,
     },
   },
 ]
