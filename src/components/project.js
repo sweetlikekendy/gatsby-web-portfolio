@@ -21,7 +21,7 @@ const Project = props => (
       <div style={{ color: `${accentColor}` }}>
         <ul className={styles.skills}>
           {props.skills.map(skill => (
-            <li className={styles}>{skill}</li>
+            <li>{skill}</li>
           ))}
         </ul>
       </div>
