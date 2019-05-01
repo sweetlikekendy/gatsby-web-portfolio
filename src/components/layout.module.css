@@ -644,16 +644,18 @@ h2 {
   padding: 4rem 0.25rem;
 }
 
+@media only screen and (max-width: 1440px) {
+  .main {
+    padding: 3rem;
+  }
+}
+
 /* 
  * iPad Pro
  */
 @media only screen and (max-width: 1024px) {
   .layout {
     margin-left: 0;
-  }
-
-  .main {
-    padding: 3rem;
   }
 }
 

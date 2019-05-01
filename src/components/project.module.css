@@ -34,13 +34,19 @@ ul > li {
   padding: 1.5rem;
 }
 
+@media only screen and (max-width: 1440px) {
+  .backgroundImage {
+    width: 400px;
+  }
+  .projectDescription {
+    padding-left: 0;
+  }
+}
+
 /* 
  * iPad Pro
  */
 @media only screen and (max-width: 1024px) {
-  .backgroundImage {
-    width: 400px;
-  }
   .project {
     grid-gap: 0;
   }
