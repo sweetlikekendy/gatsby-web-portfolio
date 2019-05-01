@@ -6,12 +6,15 @@ ul > li {
   border-radius: 3px;
   line-height: 1.6rem;
   letter-spacing: 0.1rem;
-  padding: 0.25rem 0.5rem;
 }
 
 .skills {
   list-style: none;
   margin: 0;
+}
+
+.skill {
+  padding: 0.25rem 0.5rem;
 }
 
 .backgroundImage {
