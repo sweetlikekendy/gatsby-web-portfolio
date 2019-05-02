@@ -29,6 +29,11 @@
   margin-top: 15rem;
 }
 
+@media only screen and (max-width: 1920px) {
+  .social_links {
+    margin-top: 8.5rem;
+  }
+}
 @media only screen and (max-width: 1440px) {
   .header {
     padding: 2rem 3rem;
@@ -45,8 +50,8 @@
 }
 
 /* 
- * iPad Pro
- */
+* iPad Pro
+*/
 @media only screen and (max-width: 1024px) {
   .header {
     width: 100%;
@@ -60,7 +65,7 @@
 }
 
 /* 
- * iPhone 6/7/8 plus
+* iPhone 6/7/8 plus
  */
 @media only screen and (max-width: 414px) {
   .header {
