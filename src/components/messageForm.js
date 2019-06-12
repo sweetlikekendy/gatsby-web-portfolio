@@ -10,7 +10,6 @@ export default () => (
       data-netlify="true"
       data-netlify-honeypot="bot-field"
     >
-      <input type="hidden" name="bot-field" />
       <input
         className={styles.small_text_area}
         type="text"
@@ -32,9 +31,9 @@ export default () => (
         placeholder="Message"
         rows="4"
       />
+      <button className={styles.button} type="submit">
+        Send Message
+      </button>
     </form>
-    <button className={styles.button} type="submit">
-      Send Message
-    </button>
   </div>
 )
