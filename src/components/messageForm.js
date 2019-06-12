@@ -3,7 +3,13 @@ import styles from "./messageForm.module.css"
 
 export default () => (
   <div className="message-form">
-    <form className={styles.message_form} method="post" action="#">
+    <form
+      className={styles.message_form}
+      method="post"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+    >
+      <input type="hidden" name="bot-field" />
       <input
         className={styles.small_text_area}
         type="text"

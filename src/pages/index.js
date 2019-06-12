@@ -1,8 +1,9 @@
 import React from "react"
-import Project from "../components/project"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Project from "../components/project"
+import MessageForm from "../components/messageForm"
 import projects from "../content/projects"
 
 import styles from "./index.module.css"
@@ -25,6 +26,9 @@ const IndexPage = () => (
             links={project.links}
           />
         ))}
+    </section>
+    <section>
+      <MessageForm />
     </section>
   </Layout>
 )
