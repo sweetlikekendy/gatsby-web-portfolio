@@ -6,6 +6,7 @@ export default () => (
     <form
       className={styles.message_form}
       method="post"
+      action="/"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
     >
