@@ -12,7 +12,8 @@ const Project = props => (
       style={{
         background: `url(${props.image})`,
         backgroundSize: `cover`,
-        backgroundPosition: `center`,
+        backgroundRepeat: `no-repeat`,
+        backgroundPosition: `center center`,
       }}
     />
     <div className={styles.projectDescription}>

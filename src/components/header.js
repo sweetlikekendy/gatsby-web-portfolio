@@ -51,12 +51,14 @@ const Header = ({ siteTitle }) => (
         <a href="mailto:kendyhnguyen1991@gmail.com">
           <MailIcon color={textColor} />
         </a>
-        <a href="/">
+        <a href="https://drive.google.com/file/d/1EISQAZRP7XbJfSJfwUpqDP8uwexzW0b2/view?usp=sharing">
           <ResumeIcon color={textColor} />
         </a>
       </div>
+      <div className={styles.copyright}>
+        © {new Date().getFullYear()} Kendy Nguyen
+      </div>
     </div>
-    <Footer />
   </header>
 )
 

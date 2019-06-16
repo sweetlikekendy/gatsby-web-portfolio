@@ -1,7 +1,7 @@
 import React from "react"
 import styles from "./messageForm.module.css"
 
-export default () => (
+const MessageForm = () => (
   <div className="message-form">
     <form
       name="contact"
@@ -39,3 +39,5 @@ export default () => (
     </form>
   </div>
 )
+
+export default MessageForm

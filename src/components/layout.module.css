@@ -628,7 +628,10 @@ pre tt:after {
 /*
  My additions to styling
 */
-
+html,
+body {
+  font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
 h2 {
   color: rgb(38, 43, 56);
 }

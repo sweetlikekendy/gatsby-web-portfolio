@@ -27,7 +27,9 @@ const IndexPage = () => (
           />
         ))}
     </section>
-    <section>
+    <hr />
+    <section className={styles.section_two}>
+      <h2>Connect With Me!</h2>
       <MessageForm />
     </section>
   </Layout>

@@ -1,5 +1,5 @@
-import WebPortfolioImage from "../images/projects/Portfolio_thumbnail.png"
-import LetMeInImage from "../images/projects/LetMeIn_thumbnail.png"
+import WebPortfolioImage from "../images/projects/logo_bg_w.png"
+import LetMeInImage from "../images/projects/let_me_in_625x625.png"
 
 export default [
   {

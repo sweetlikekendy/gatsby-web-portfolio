@@ -29,6 +29,10 @@
   margin-top: 15rem;
 }
 
+.copyright {
+  text-align: center;
+}
+
 @media only screen and (max-width: 1920px) {
   .social_links {
     margin-top: 8.5rem;
